@@ -17,11 +17,11 @@ If installing Cachet using Docker, head over to [this link](https://docs.cacheth
 
 **Note:** You will need to generate an app-key, or copy one from failed output when attempting to run the Cachet container after the first time. The easiest way to do this is look in the terminal output after trying to run the container with `docker-compose up` the first time. See the output below:
 
-![Cachet app-key][media/cachet-app-key.png?raw=true]
+![Cachet app-key](media/cachet-app-key.png?raw=true)
 
 Copy the value that's highlighted and paste it in the `docker-compose.yml` file for Cachet. It should follow this format `APP_KEY=base64:<token-value>`. After doing so, run `docker-compose up` again and you should see it successfully start. Browse to localhost and you should see your Cachet status page:
 
-![Cachet Running][media/cachet-running.png?raw=true]
+![Cachet Running](media/cachet-running.png?raw=true)
 
 ## xMatters Docker Agent
 This lab also uses the docker-ized xMatters Agent. This may or may not be necessary depending on your Cachet environment setup. Running both the xMatters Agent & Cachet in containers made the communication between the two much easier, however each step in the workflow can specify whether to run in the cloud or on an agent.
@@ -47,16 +47,16 @@ Be sure to replace all of the above info in between the `< >`'s above with data 
 
 ## xMatters Workflow Configuration
 After importing the workflow, browse to it in your xMatters environment and select `Components -> Endpoints`. Edit the Cachet endpoint to point at the root of your Cachet instance:
-![Endpoints][media/endpoints.png?raw=true]
+![Endpoints](media/endpoints.png?raw=true)
 
-![Cachet Endpoint][media/cachet-endpoint.png?raw=true]
+![Cachet Endpoint](media/cachet-endpoint.png?raw=true)
 
 If you are runnning Cachet using the docker container above, you can use the IP address of the container and port 8000 for the base root URL of the API with this out of the box setup. You can also add or setup any type of authentication that your Cachet API instance may require on this page.
 
 # Testing
 Browse to one of the flows in the imported communication plan - recommended to choose "Create Component" to create a test component in Cachet running through xMatters. Select the HTTP trigger step in the workflow and copy the URL. The screen below shows where you can find this URL:
 
-![Create Component Endpoint][media/create-component.png?raw=true]
+![Create Component Endpoint](media/create-component.png?raw=true)
 
 Take this URL and test POSTing to it using Postman (or your favorite API testing tool). 
 
@@ -69,4 +69,4 @@ The same functionality can be tested from within the xMatters UI as all of these
 # Troubleshooting
 While testing, you can use the activity stream in the xMatters UI on any of the Flow Designer pages to see a log of what happened. This is highly recommended while setting up the integration for the first time, or while adding or changing any functionality.
 
-![Activity Stream][media/activity-stream.png?raw=true]
+![Activity Stream](media/activity-stream.png?raw=true)
