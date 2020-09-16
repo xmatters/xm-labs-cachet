@@ -4,7 +4,7 @@
 - xMatters account - If you don't have one, [get one](https://www.xmatters.com/)!
 
 # Files
-1. Workflow.zip - workflow containing all the custom steps for interacting with Cachet through the API
+1. [CachetStatusPage.zip](CachetStatusPage.zip?raw=true) - workflow containing all the custom steps for interacting with Cachet through the API
 
 # Installation
 ## xMatters Setup
