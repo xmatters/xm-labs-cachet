@@ -1,5 +1,6 @@
 # Cachet Status Page
 This repo provides installation, configuration and implementation details for integrating xMatters On-Demand with Cachet - an open source status page.
+
 ![Disclaimer](media/disclaimer.png?raw=true)
 
 # Pre-Requisites
